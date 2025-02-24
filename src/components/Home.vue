@@ -28,8 +28,9 @@ import HeaderBar from './HeaderBar.vue';
 const router = useRouter();
 
 const openAboutMe = () => {
-  const resolved = router.resolve('/aboutme');
-  const url = window.location.origin + resolved.href; //전체 경로를 가져옴(/#/가 앞에 오도록)
+  const text = '/aboutme';
+  const bace = process.env.NODE_ENV === 'production' ? '/Portfolio/':'/'
+  const url = window.location.origin + bace + '#' + text;
   window.open(url, '_blank');
 }
 </script>
