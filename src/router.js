@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './components/Home.vue';
-import AboutMe from './components/Aboutme.vue';
+import Aboutme from './components/Aboutme.vue';
 import Clone from './components/Clone.vue';
 import Website from './components/Website.vue';
 import Pracical from './components/Pracical.vue';
@@ -14,7 +14,7 @@ const routes = [
   {
     path: '/aboutme',
     name: 'AboutMe',
-    component: AboutMe  // AboutMe 페이지
+    component: Aboutme  // AboutMe 페이지
   },
   {
     path: '/clone',
