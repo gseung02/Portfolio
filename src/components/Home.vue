@@ -28,12 +28,12 @@ import HeaderBar from './HeaderBar.vue';
 const router = useRouter();
 
 const images = [
-  '/images/Tesla.jpg',
-  '/images/Airbnb.jpg',
-  '/images/Netflix.jpg',
-  '/images/Momentom.jpg',
-  '/images/blog.jpg',
-  '/images/Cart.jpg',
+  `${baseUrl}/images/Tesla.jpg`,
+  `${baseUrl}/images/Airbnb.jpg`,
+  `${baseUrl}/images/Netflix.jpg`,
+  `${baseUrl}/images/Momentom.jpg`,
+  `${baseUrl}/images/blog.jpg`,
+  `${baseUrl}/images/Cart.jpg`,
 ];
 
 const currentIndex = ref(0); // 현재 이미지 인덱스
