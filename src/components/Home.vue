@@ -22,10 +22,15 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
 import HeaderBar from './HeaderBar.vue';
 
+const router = useRouter();
+
 const openAboutMe = () => {
-  window.open('/AboutMe', '_blank'); //AboutMe 창이 새로 열림
+  const resolved = router.resolve('/aboutme');
+  const url = window.location.origin + resolved.href; //전체 경로를 가져옴(/#/)
+  window.open(url, '_blank');
 }
 </script>
 
