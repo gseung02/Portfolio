@@ -61,7 +61,7 @@ const goHome = () => {
     height: 45px;
     background-color: var(--color-main);
     border-radius: 50%;
-    border: 3px solid #222;
+    border: 2px solid #222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +80,6 @@ const goHome = () => {
     width: 12px;
     height: 12px;
     background-color: var(--color-hd1);
-    border: 3px solid #222;
+    border: 2px solid #222;
   }
 </style>
