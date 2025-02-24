@@ -22,10 +22,9 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 import HeaderBar from './HeaderBar.vue';
 
-const router = useRouter();
+const baseUrl = process.env.BASE_URL || '';
 
 const images = [
   `${baseUrl}/images/Tesla.jpg`,
