@@ -8,7 +8,7 @@
       </div>
       <div class="imgSlider">
         <div class="slider" :style="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }">
-          <img v-for="(image, index) in images" :key="index" :src="image" alt="Slider Image" class="slider-image" />
+          <img v-for="(image, index) in images" :key="index" :src="`${baceUrl}${image}`" alt="Slider Image" class="slider-image" />
         </div>
         <button @click="prevSlide" class="prev-button">◀</button>
         <button @click="nextSlide" class="next-button">▶</button>
@@ -24,15 +24,15 @@
 import { ref } from 'vue';
 import HeaderBar from './HeaderBar.vue';
 
-const baseUrl = process.env.BASE_URL || '';
-
+const bace = process.env.NODE_ENV === 'production' ? '/Portfolio/':'/';
+const baceUrl = ref(bace); 
 const images = [
-  `${baseUrl}/images/Tesla.jpg`,
-  `${baseUrl}/images/Airbnb.jpg`,
-  `${baseUrl}/images/Netflix.jpg`,
-  `${baseUrl}/images/Momentom.jpg`,
-  `${baseUrl}/images/blog.jpg`,
-  `${baseUrl}/images/Cart.jpg`,
+  `/images/Tesla.jpg`,
+  `/images/Airbnb.jpg`,
+  `/images/Netflix.jpg`,
+  `/images/Momentom.jpg`,
+  `/images/blog.jpg`,
+  `/images/Cart.jpg`,
 ];
 
 const currentIndex = ref(0); // 현재 이미지 인덱스
