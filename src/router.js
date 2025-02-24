@@ -4,21 +4,17 @@ import AboutMe from './components/Aboutme.vue';
 import Clone from './components/Clone.vue';
 import Website from './components/Website.vue';
 import Pracical from './components/Pracical.vue';
-import MobileHome from './components/mobileHome.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    components: {
-      mobile: MobileHome,
-      desktop: Home
-    }
+    component: Home //Home 페이지
   },
   {
     path: '/aboutme',
     name: 'AboutMe',
-    component: AboutMe,  // AboutMe 페이지
+    component: AboutMe  // AboutMe 페이지
   },
   {
     path: '/clone',
