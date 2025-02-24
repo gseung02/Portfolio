@@ -38,8 +38,8 @@ const goPracical = () => {
 <style scoped>
   nav{
     width: 250px;
-    height: 864px;
-    background-color: #FFFDB6;
+    height: 824px;
+    background-color: #fff;
     border: 3px solid #222;
   }
   .main-menu{
@@ -49,7 +49,7 @@ const goPracical = () => {
     cursor: pointer;
   }
   .main-menu:hover{
-    background-color: #fff;
+    background-color: var(--color-menu);
   }
   .main-menu>p{
     font-size: 32px;
@@ -57,11 +57,7 @@ const goPracical = () => {
     line-height: 100px;
     margin: 0;
   }
-  .main-menu:nth-child(2):hover .sub-menu{
-    display: block;
-  }
   .sub-menu{
-    display: none;
     width: 200px;
     margin: 0 auto;
   }
@@ -72,14 +68,12 @@ const goPracical = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     border: 3px solid #222;
-    
-    font-size: 18px;
+    font-size: 1.1rem;
     cursor: pointer;
   }
   .sub-menu>li:hover{
-    background-color: #FFFDB6;
+    background-color: var(--color-menu);
   }
   .sub-menu>li:nth-child(2),
   .sub-menu>li:nth-child(3){

@@ -66,8 +66,15 @@ import MenuComponent from './MenuComponent.vue';
 </script>
 
 <style scoped>
+  #aboutme{
+    width: 80%;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  }
   main{
     display: flex;
+    background-color: var(--color-main);
   }
   .content{
     display: grid;
@@ -82,7 +89,7 @@ import MenuComponent from './MenuComponent.vue';
     border-left: none;
   }
   .skill-box{
-    width: 500px;
+    width: 350px;
     margin: 20px auto;
   }
   .skill>.skill-box>h3{
@@ -90,6 +97,7 @@ import MenuComponent from './MenuComponent.vue';
   }
   .skill-name{
     display: flex;
+    margin-bottom: 50px;
   }
   .left,
   .right{
@@ -101,12 +109,12 @@ import MenuComponent from './MenuComponent.vue';
   }
   .left>p,
   .right>p{
-    width: 300px;
+    width: 200px;
     font-size: 24px;
   }
   .skill-icon{
-    width: 650px;
-    height: 200px;
+    width: 400px;
+    height: 150px;
     margin-top: 20px;
     margin: 0 auto;
     display: grid;
@@ -115,8 +123,8 @@ import MenuComponent from './MenuComponent.vue';
   }
   .skill-icon>div,
   .skill-icon>div>img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .img{
     display: flex;
@@ -131,7 +139,7 @@ import MenuComponent from './MenuComponent.vue';
     grid-column: span 2;
     border-right: 3px solid #222;
     border-bottom: 3px solid #222;
-    background-color: #B9FFB6;
+    background-color: var(--color-main);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,7 +152,7 @@ import MenuComponent from './MenuComponent.vue';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFDB6;
+    background-color: var(--color-hd2);
     padding: 0 20px;
     border: 3px solid #222;
   }

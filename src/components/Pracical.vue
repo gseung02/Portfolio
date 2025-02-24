@@ -37,6 +37,11 @@ const showComponent = (component) => {
 </script>
 
 <style scoped>
+#pracical{
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
 main{
   display: flex;
 }
@@ -63,9 +68,9 @@ main>div{
   cursor: pointer;
 }
 .category>li:hover{
-  background-color: #FFFDB6;
+  background-color: var(--color-hd2);
 }
 .category>li>p{
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 </style>

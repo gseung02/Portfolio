@@ -37,10 +37,13 @@ const goHome = () => {
     font-size: 26px;
   }
   .header{
-    height: 80px;
-    background-color: #B9FFB6;
+    height: 60px;
+    background-color: var(--color-hd1);
     border: 3px solid #222;
     border-bottom: none;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   }
   .header-content{
     width: 95%;
@@ -56,7 +59,7 @@ const goHome = () => {
   button{
     width: 45px;
     height: 45px;
-    background-color: #FFFDB6;
+    background-color: var(--color-main);
     border-radius: 50%;
     border: 3px solid #222;
     display: flex;
@@ -74,9 +77,9 @@ const goHome = () => {
     gap: 10px;
   }
   .header-right>.square{
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-hd1);
     border: 3px solid #222;
   }
 </style>

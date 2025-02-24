@@ -17,7 +17,12 @@
 
 <style scoped>
 .ui{
-  height: calc(864px - 70px);
+  width: 1280px;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  background-color: var(--color-main);
+  height: calc(864px - 110px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -33,10 +38,12 @@
 .ui>div:nth-child(1){
   background-image: url(/public/images/x-masMarket.jpg);
   background-size: cover;
+  background-position: center;
 }
 .ui>div:nth-child(2){
   background-image: url(/public/images/cardMenu.jpg);
   background-size: cover;
+  background-position: center;
 }
 .ui>div:nth-child(3){
   grid-row: span 2;
@@ -48,11 +55,12 @@
   grid-row: span 2;
   background-image: url(/public/images/campaign.jpg);
   background-size: cover;
+  background-position: center;
 }
 .ui>div:nth-child(5){
   background-image: url(/public/images/pscard.jpg);
   background-size: cover;
-  background-color: #B9FFB6;
+  background-position: center;
 }
 .left,
 .right{

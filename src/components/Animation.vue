@@ -58,11 +58,16 @@
 
 <style scoped>
   .animation{
-    height: calc(864px - 70px);
+    width: 1280px;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    background-color: var(--color-main);
+    height: calc(864px - 110px);
     display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    }
   .animation>div{
     display: flex;
     justify-content: center;
@@ -73,19 +78,23 @@
   .animation>div:nth-child(1){
     background-image: url(/public/images/grid.jpg);
     background-size: cover;
+    background-position: center;
   }
   .animation>div:nth-child(3){
     background-image: url(/public/images/parallax.jpg);
     background-size: cover;
+    background-position: center;
   }
   .animation>div:nth-child(6){
     background-image: url(/public/images/scrollAnimation.jpg);
     background-size: cover;
+    background-position: center;
   }
 
   .animation>div:nth-child(8){
     background-image: url(/public/images/progressBar.jpg);
     background-size: cover;
+    background-position: center;
   }
   .text-box{
     width: 300px;
@@ -95,7 +104,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #FFFDB6;
+    background-color: var(--color-hd2);
     padding: 0 20px;
     border: 3px solid #222;
   }

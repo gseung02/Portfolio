@@ -5,12 +5,16 @@
   font-style: normal;
 }
 :root{
-  --color-bg: #fff;
-  --color-main: #fff;
+  --color-hd1: #ec8585;
+  --color-hd2: #97e0be;
+  --color-bg: #ffe2a4;
+  --color-main: #fffbe7;
+  --color-menu: #f3c3d3;
   --color-font: #222;
 }
 *{margin: 0; padding: 0;}
 body{
+  background-color: var(--color-bg);
   font-family: 'GongGothicMedium';
 }
 a{
@@ -22,10 +26,9 @@ li{
 }
 header{
   height: 80px;
-  background-color: #B9FFB6;
   border: 3px solid #222;
-    border-bottom: none;
+  border-bottom: none;
 }
 main{
-  height: calc(100vh - 83px);
+  height: calc(100vh - 123px);
 }
