@@ -40,12 +40,12 @@ const currentIndex = ref(0); // 현재 이미지 인덱스
 
 // 이전 슬라이드로 이동
 const prevSlide = () => {
-  currentIndex.value = (currentIndex.value === 0) ? images.length - 1 : currentIndex.value - 1;
+  currentIndex.value = (currentIndex.value === 0) ? images.value.length - 1 : currentIndex.value - 1;
 };
 
 // 다음 슬라이드로 이동
 const nextSlide = () => {
-  currentIndex.value = (currentIndex.value === images.length - 1) ? 0 : currentIndex.value + 1;
+  currentIndex.value = (currentIndex.value === images.value.length - 1) ? 0 : currentIndex.value + 1;
 };
 
 
