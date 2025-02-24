@@ -13,7 +13,7 @@ const routes = [
   },
   {
     path: '/aboutme',
-    name: 'AboutMe',
+    name: 'Aboutme',
     component: Aboutme  // AboutMe 페이지
   },
   {
