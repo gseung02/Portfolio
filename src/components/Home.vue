@@ -81,6 +81,7 @@ main{
   font-size: 8rem;
 }
 .text>p{
+  margin-top: 30px;
   font-size: 1.5rem;
 }
 
@@ -123,7 +124,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--color-hd1);
   border: 3px solid #222;
   padding: 10px 30px;
   border-radius: 10%;
