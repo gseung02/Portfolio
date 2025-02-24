@@ -29,7 +29,7 @@ const router = useRouter();
 
 const openAboutMe = () => {
   const resolved = router.resolve('/aboutme');
-  const url = window.location.origin + resolved.href; //전체 경로를 가져옴(/#/)
+  const url = window.location.origin + resolved.href; //전체 경로를 가져옴(/#/가 앞에 오도록)
   window.open(url, '_blank');
 }
 </script>
