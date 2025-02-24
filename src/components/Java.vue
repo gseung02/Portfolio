@@ -70,22 +70,22 @@
     border-right: 3px solid #222;
   }
   .animation>div:nth-child(1){
-    background-image: url(/public/images/Netflix02.png);
+    background-image: url(/public/images/Netflix02.jpg);
     background-size: cover;
     background-position: center;
   }
   .animation>div:nth-child(3){
-    background-image: url(/public/images/datecalc.JPG);
+    background-image: url(/public/images/datecalc.jpg);
     background-size: cover;
     background-position: center;
   }
   .animation>div:nth-child(6){
-    background-image: url(/public/images/scroll.JPG);
+    background-image: url(/public/images/scroll.jpg);
     background-size: cover;
   }
 
   .animation>div:nth-child(8){
-    background-image: url(/public/images/chart.JPG);
+    background-image: url(/public/images/chart.jpg);
     background-size: cover;
     background-position: center;
   }

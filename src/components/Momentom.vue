@@ -53,7 +53,7 @@
   border-bottom: 3px solid #222;
 }
 .img{
-  background-image: url(/public/images/Momentom.png);
+  background-image: url(/public/images/Momentom.jpg);
   background-size: cover;
   background-position: center;
 }

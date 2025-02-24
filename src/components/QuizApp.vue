@@ -67,12 +67,12 @@
   border-radius: 10px;
 }
 .left{
-  background-image: url(/public/images/Quiz.png);
+  background-image: url(/public/images/Quiz.jpg);
   background-size: cover;
   background-position: center;
 }
 .right{
-  background-image: url(/public/images/Quiz02.png);
+  background-image: url(/public/images/Quiz02.jpg);
   background-size: cover;
   background-position: center;
 }

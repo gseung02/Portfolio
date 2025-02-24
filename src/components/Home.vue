@@ -6,7 +6,7 @@
         <h2>Hello!</h2>
       </div>
       <div class="img">
-        <img src="/public/images/img01.png" alt="일러스트1이미지">
+        <img src="/public/images/img01.jpg" alt="일러스트1이미지">
       </div>
       <div class="year">
         <h2>2024</h2>

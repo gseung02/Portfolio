@@ -51,7 +51,7 @@
   border-bottom: 3px solid #222;
 }
 .img{
-  background-image: url(/public/images/Cart.png);
+  background-image: url(/public/images/Cart.jpg);
   background-size: cover;
 }
 .prodection{

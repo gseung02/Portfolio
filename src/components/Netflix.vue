@@ -54,7 +54,7 @@
   border-bottom: 3px solid #222;
 }
 .img{
-  background-image: url(/public/images/Netflix.png);
+  background-image: url(/public/images/Netflix.jpg);
   background-size: cover;
   background-position: center;
 

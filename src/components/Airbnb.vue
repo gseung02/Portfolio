@@ -52,7 +52,7 @@
   border-bottom: 3px solid #222;
 }
 .img{
-  background-image: url(/public/images/Airbnb.png);
+  background-image: url(/public/images/Airbnb.jpg);
   background-size: cover;
   background-position: center;
 

@@ -31,7 +31,7 @@
           </div>
         </div>
           <div class="img">
-            <img src="/public/images/img02.png" alt="일러스트이미지2">
+            <img src="/public/images/img02.jpg" alt="일러스트이미지2">
           </div>
           <div class="text">
             <div class="text-box">

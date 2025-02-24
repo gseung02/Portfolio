@@ -71,20 +71,20 @@
     border-right: 3px solid #222;
   }
   .animation>div:nth-child(1){
-    background-image: url(/public/images/grid.JPG);
+    background-image: url(/public/images/grid.jpg);
     background-size: cover;
   }
   .animation>div:nth-child(3){
-    background-image: url(/public/images/parallax.JPG);
+    background-image: url(/public/images/parallax.jpg);
     background-size: cover;
   }
   .animation>div:nth-child(6){
-    background-image: url(/public/images/scrollAnimation.JPG);
+    background-image: url(/public/images/scrollAnimation.jpg);
     background-size: cover;
   }
 
   .animation>div:nth-child(8){
-    background-image: url(/public/images/progressBar.JPG);
+    background-image: url(/public/images/progressBar.jpg);
     background-size: cover;
   }
   .text-box{

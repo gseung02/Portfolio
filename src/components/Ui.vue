@@ -41,7 +41,6 @@
 .ui>div:nth-child(3){
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #fff;
   flex-direction: row !important;
   justify-content: space-around;
 }
@@ -51,8 +50,8 @@
   background-size: cover;
 }
 .ui>div:nth-child(5){
-  /* background-image: url(/public/images/x-mas\ market\ 03.jpg);
-  background-size: cover; */
+  background-image: url(/public/images/pscard.jpg);
+  background-size: cover;
   background-color: #B9FFB6;
 }
 .left,
@@ -67,7 +66,7 @@
   background-size: cover;
 }
 .right{
-  background-image: url(/public/images/coffee.JPG);
+  background-image: url(/public/images/coffee.jpg);
   background-size: cover;
 }
 </style>
