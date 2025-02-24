@@ -31,7 +31,7 @@
   border-bottom: 3px solid #222;
 }
 .ui>div:nth-child(1){
-  background-image: url(/public/images/x-mas\ market\ 04.jpg);
+  background-image: url(/public/images/x-masMarket.jpg);
   background-size: cover;
 }
 .ui>div:nth-child(2){
