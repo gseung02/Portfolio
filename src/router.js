@@ -34,7 +34,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory('/Portfolio/'),  // 브라우저 히스토리 모드
+  history: createWebHashHistory(),  // 브라우저 히스토리 모드
   routes,
 });
 
