@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import HeaderBar from './HeaderBar.vue';
 
 const bace = process.env.NODE_ENV === 'production' ? '/Portfolio/':'/';
@@ -34,9 +34,21 @@ const images = ref([
   `images/blog.jpg`,
   `images/Cart.jpg`,
 ]);
-console.log(baceUrl.value + images.value[0]);
 
 const currentIndex = ref(0); // 현재 이미지 인덱스
+
+// 페이지 로드 후 자동 슬라이드 전환
+onMounted(() => {
+  const interval = setInterval(() => {
+    nextSlide();
+  }, 2000);
+
+  // 컴포넌트가 언마운트될 때 interval을 정리
+  onBeforeUnmount(() => {
+    clearInterval(interval);
+  });
+});
+
 
 // 이전 슬라이드로 이동
 const prevSlide = () => {
@@ -60,12 +72,13 @@ const openAboutMe = () => {
 <style scoped>
 #home{
   width: 80%;
+  height: 90%;
+}
+main{
+  height: calc(100% - 60px);
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
-}
-main{
-  height: 830px;
   background-color: var(--color-main);
   border: 3px solid #222;
   display: flex;
@@ -132,5 +145,68 @@ main{
 }
 .btn>p{
   font-size: 2rem;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1200px) {
+  #home {
+    width: 90%;
+  }
+
+  .text > h1 {
+    font-size: 6rem;
+  }
+
+  .text > p {
+    font-size: 1.2rem;
+  }
+
+  .imgSlider {
+    max-width: 600px;
+  }
+
+  .btn > p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #home {
+    width: 95%;
+  }
+
+  .text > h1 {
+    font-size: 5rem;
+  }
+
+  .text > p {
+    font-size: 1rem;
+  }
+
+  .imgSlider {
+    max-width: 500px;
+  }
+
+  .btn > p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text > h1 {
+    font-size: 4rem;
+  }
+
+  .text > p {
+    font-size: 0.9rem;
+  }
+
+  .imgSlider {
+    max-width: 100%;
+  }
+
+  .btn > p {
+    font-size: 1.2rem;
+  }
 }
 </style>

@@ -3,7 +3,7 @@
     <HeaderBar/>
     <main>
       <MenuComponent/>
-      <div>
+      <div class="wrap">
         <ul class="category">
           <li @click="showComponent('Blog')"><p>coffee 블로그형 웹사이트</p></li>
           <li @click="showComponent('QuizApp')"><p>모바일 상식 퀴즈 App</p></li>
@@ -36,24 +36,30 @@ const showComponent = (component) => {
 
 <style scoped>
 #website{
+  width: 80%;
+  height: 90%;
+}
+main{
+  height: calc(100% - 60px);
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
-}
-main{
+  background-color: var(--color-main);
+  border: 3px solid #222;
   display: flex;
 }
-main>div{
-  width: calc(100% - 250px);
+
+.wrap{
+  width: 100%;
+  height: 100%;
 }
 .category{
   width: 100%;
-  height: 70px;
+  height: 60px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 3px solid #222;
   border-bottom: 3px solid #222;
 }
 .category>li{
@@ -65,10 +71,17 @@ main>div{
   border-right: 3px solid #222;
   cursor: pointer;
 }
+.category>li:nth-last-child(1){
+  border-right: none;
+}
 .category>li:hover{
   background-color: var(--color-hd2);
 }
 .category>li>p{
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+.components{
+  width: 100%;
+  height: 100%;
 }
 </style>

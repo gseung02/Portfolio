@@ -3,19 +3,19 @@
     <HeaderBar/>
     <main>
       <MenuComponent/>
-      <div>
+      <div class="wrap">
         <ul class="category">
           <li @click="showComponent('Tesla')"><p>Tesla</p></li>
           <li @click="showComponent('Airbnb')"><p>Airbnb</p></li>
           <li @click="showComponent('Netflix')"><p>Netflix</p></li>
           <li @click="showComponent('Momentom')"><p>Momentom</p></li>
-      </ul>
-      <div class="components">
-        <Tesla v-if="selectedComponent === 'Tesla'"/>
-        <Airbnb v-if="selectedComponent === 'Airbnb'"/>
-        <Netflix v-if="selectedComponent === 'Netflix'"/>
-        <Momentom v-if="selectedComponent === 'Momentom'"/>
-      </div>
+        </ul>
+        <div class="components">
+          <Tesla v-if="selectedComponent === 'Tesla'"/>
+          <Airbnb v-if="selectedComponent === 'Airbnb'"/>
+          <Netflix v-if="selectedComponent === 'Netflix'"/>
+          <Momentom v-if="selectedComponent === 'Momentom'"/>
+        </div>
       </div>
     </main>
   </div>
@@ -40,24 +40,30 @@ const showComponent = (component) => {
 
 <style scoped>
 #clone{
+  width: 80%;
+  height: 90%;
+}
+main{
+  height: calc(100% - 60px);
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
-}
-main{
+  background-color: var(--color-main);
+  border: 3px solid #222;
   display: flex;
 }
-main>div{
-  width: calc(100% - 250px);
+
+.wrap{
+  width: 100%;
+  height: 100%;
 }
 .category{
   width: 100%;
-  height: 70px;
+  height: 60px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 3px solid #222;
   border-bottom: 3px solid #222;
 }
 .category>li{
@@ -69,10 +75,17 @@ main>div{
   border-right: 3px solid #222;
   cursor: pointer;
 }
+.category>li:nth-last-child(1){
+  border-right: none;
+}
 .category>li:hover{
   background-color: var(--color-hd2);
 }
 .category>li>p{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+}
+.components{
+  width: 100%;
+  height: 100%;
 }
 </style>

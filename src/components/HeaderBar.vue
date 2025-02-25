@@ -33,9 +33,6 @@ const goHome = () => {
 </script>
 
 <style scoped>
-  h3{
-    font-size: 26px;
-  }
   .header{
     height: 60px;
     background-color: var(--color-hd1);

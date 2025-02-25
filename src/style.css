@@ -10,6 +10,7 @@
   --color-bg: #ffe2a4;
   --color-main: #fffbe7;
   --color-menu: #f3c3d3;
+  --color-box: #fff9c3;
   --color-font: #222;
 }
 *{margin: 0; padding: 0;}
@@ -23,12 +24,4 @@ a{
 }
 li{
   list-style: none;
-}
-header{
-  height: 80px;
-  border: 3px solid #222;
-  border-bottom: none;
-}
-main{
-  height: calc(100vh - 123px);
 }

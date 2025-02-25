@@ -41,17 +41,16 @@
 
 <style scoped>
 #momentom{
-  width: 1280px;
-  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
-  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  width: 100%;
+  height: calc(100% - 60px);
   background-color: var(--color-main);
 }
 .contents{
-  height: calc(864px - 110px);
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .contents>div{
   display: flex;
@@ -66,8 +65,9 @@
   background-size: cover;
   background-position: center;
 }
-.prodection{
+.contents>div:nth-child(2){
   grid-row: span 2;
+  border-right: none;
 }
 .pro-box,
 .des-box{
@@ -88,7 +88,7 @@
   line-height: 50px;
 }
 .icon-box{
-  padding-top: 20px;
+  padding-top: 1.2rem;
 }
 .icon-box>img{
   width: 50px;

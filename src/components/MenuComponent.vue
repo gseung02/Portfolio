@@ -38,10 +38,10 @@ const goPracical = () => {
 <style scoped>
   nav{
     width: 250px;
-    height: 824px;
+    height: 100%;
     background-color: #fff;
-    border: 3px solid #222;
-  }
+    border-right: 3px solid #222;
+    }
   .main-menu{
     width: 250px;
     height: 100px;
@@ -79,4 +79,6 @@ const goPracical = () => {
   .sub-menu>li:nth-child(3){
     border-top: none;
   }
+
+
 </style>
