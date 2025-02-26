@@ -51,6 +51,11 @@
       </div>
       <div></div>
     </div>
+    <div class="box">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
   </div>
 </template>
 
@@ -61,10 +66,11 @@
 <style scoped>
   #animation{
     width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 113px);
     background-color: var(--color-main);
     }
   .wrap{
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -128,14 +134,13 @@
   }
 
   .box{
-  height: 48px;
+  height: 50px;
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 10px;
   padding-right: 10px;
   background-color: var( --color-box);
-  border-right: 3px solid #222;
   border-bottom: 3px solid #222;
 }
 .circle{

@@ -168,4 +168,20 @@ main{
   text-align: left;
   line-height: 25px;
 }
+
+/*** 반응형 */
+@media (max-width:1200px) {
+    main{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width:900px) {
+    
+  }
+
+  @media (max-width:768px) {
+    
+  }
 </style>

@@ -108,9 +108,5 @@ const goHome = () => {
   .header-right{
     width: 80px;
   }
-  .header-right>.square{
-    width: 10px;
-    height: 10px;
-  }
   }
 </style>

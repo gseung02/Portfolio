@@ -58,7 +58,7 @@ const nextSlide = () => {
 <style scoped>
 #ui{
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100% - 63px);
   background-color: var(--color-main);
 }
 .wrap{

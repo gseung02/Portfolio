@@ -51,10 +51,10 @@
       <div></div>
     </div>
     <div class="box">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
   </div>
 </template>
 
@@ -65,9 +65,9 @@
 <style scoped>
   #javascript{
     width: 100%;
-  height: calc(100% - 110px);
-  background-color: var(--color-main);
-  }
+    height: calc(100% - 113px);
+    background-color: var(--color-main);
+    }
   .wrap{
     width: 100%;
     height: 100%;
@@ -75,7 +75,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     }
-
   .wrap>div{
     display: flex;
     justify-content: center;
