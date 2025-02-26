@@ -51,7 +51,7 @@ const goHome = () => {
     align-items: center;
   }
   .header-content>p{
-    font-size: 40px;
+    font-size: 2rem;
   }
   button{
     width: 45px;
@@ -62,7 +62,7 @@ const goHome = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     cursor: pointer;
   }
   .header-right{
@@ -78,5 +78,39 @@ const goHome = () => {
     height: 12px;
     background-color: var(--color-hd1);
     border: 2px solid #222;
+  }
+
+  /*** 반응형 */
+  @media (max-width:1200px) {
+    
+  }
+
+  @media (max-width:900px) {
+    .header-content>p{
+    font-size: 1.8rem;
+  }
+  button{
+    width:40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  }
+
+  @media (max-width:768px){
+    .header-content>p{
+    font-size: 1.2rem;
+  }
+  button{
+    width:35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  .header-right{
+    width: 80px;
+  }
+  .header-right>.square{
+    width: 10px;
+    height: 10px;
+  }
   }
 </style>

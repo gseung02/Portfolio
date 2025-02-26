@@ -172,11 +172,11 @@ main{
 
 @media (max-width: 900px) {
   #home {
-    width: 95%;
+    width: 90%;
   }
 
   .text > h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .text > p {
@@ -187,14 +187,20 @@ main{
     max-width: 500px;
   }
 
-  .btn > p {
+  .prev-button,
+  .next-button{
+    padding: 5px;
     font-size: 1.5rem;
+  }
+
+  .btn > p {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
   .text > h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .text > p {
@@ -206,7 +212,7 @@ main{
   }
 
   .btn > p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 </style>

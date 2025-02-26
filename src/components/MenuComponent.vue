@@ -80,5 +80,16 @@ const goPracical = () => {
     border-top: none;
   }
 
+  /*** 반응형 */
+  @media (max-width:1200px) {
+    
+  }
 
+  @media (max-width:900px) {
+    
+  }
+
+  @media (max-width:768px) {
+    
+  }
 </style>
