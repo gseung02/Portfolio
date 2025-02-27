@@ -51,14 +51,20 @@ const goPracical = () => {
   .main-menu:hover{
     background-color: var(--color-menu);
   }
+  .main-menu:nth-child(2){
+    position: relative;
+  }
   .main-menu>p{
     font-size: 32px;
     text-align: center;
     line-height: 100px;
   }
   .sub-menu{
-    width: 200px;
-    margin: 0 auto;
+    width: 70%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-58%);
   }
   .sub-menu>li{
     width: 200px;
