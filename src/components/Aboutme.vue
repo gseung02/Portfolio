@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div></div>
+        <div class="img"></div>
         <div class="text">
           <div class="text-box">
             <div class="box-header">
@@ -93,7 +93,7 @@ main{
   border-right: 3px solid #222;
   border-bottom: 3px solid #222;
 }
-.grid>div:nth-child(2){
+.grid>.img{
   border-right: none;
   background-image: url(/images/img02.jpg);
   background-size: cover;
@@ -110,7 +110,7 @@ main{
   align-items: center;
 }
 .skill-box{
-  width: 50%;
+  width: 60%;
 }
 .skill-header>p{
   font-size: 1.3rem;
@@ -175,6 +175,23 @@ main{
       display: flex;
       flex-direction: column;
     }
+    .skill-box{
+      width: 70%;
+      margin-top: 20px;
+    }
+    .skill-header>p{
+      font-size: 1.1rem;
+    }
+    .skill-name{
+      margin-top: 10px;
+    }
+    .left>p,
+    .right>p{
+      font-size: 0.9rem;
+    }
+    .text-box{
+      height: 80%;
+    }
   }
 
   @media (max-width:900px) {
@@ -182,6 +199,33 @@ main{
   }
 
   @media (max-width:768px) {
-    
+    #aboutme{
+      height: auto;
+    }
+    .grid{
+      display: flex;
+      flex-direction: column;
+    }
+    .grid>div{
+      border-right: none;
+    }
+    .grid>.img{
+      display: none;
+    }
+    .text{
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .text-box{
+      width: 70%;
+      margin: 20px auto;
+    }
+    .box-header>p{
+      font-size: 1rem;
+    }
+    .box-content>p{
+      font-size: 0.8rem;
+    }
   }
 </style>

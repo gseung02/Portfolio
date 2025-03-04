@@ -72,23 +72,27 @@
 .pro-box,
 .des-box{
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
 }
 .pro-box>h3,
 .des-box>h3{
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 .pro-box>p,
 .des-box>p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   word-break: keep-all;
 }
-.pro-box>p,
 .des-box>p{
-  line-height: 50px;
+  line-height: 30px;
 }
 .icon-box{
-  padding-top: 1.2rem;
+  margin-top: 20px;
 }
 .icon-box>img{
   width: 50px;

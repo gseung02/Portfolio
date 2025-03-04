@@ -38,7 +38,7 @@ const showComponent = (component) => {
 
 <style scoped>
 #pracical{
-  width: 80%;
+  width: 90%;
   height: 90%;
 }
 main{

@@ -45,19 +45,22 @@ const goPracical = () => {
   .main-menu{
     width: 250px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 3px solid #222;
     cursor: pointer;
   }
   .main-menu:hover{
     background-color: var(--color-menu);
+    border-right: 3px solid #222;
   }
   .main-menu:nth-child(2){
     position: relative;
   }
   .main-menu>p{
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
-    line-height: 100px;
   }
   .sub-menu{
     width: 70%;
@@ -106,6 +109,9 @@ const goPracical = () => {
       justify-content: center;
       align-items: center;
     }
+    .main-menu:hover{
+      border-right: none;
+    }
     .main-menu:nth-child(1){
       border-right: 3px solid #222;
     }
@@ -116,9 +122,10 @@ const goPracical = () => {
       display: block;
     }
     .main-menu>p{
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
     .sub-menu{
+      width: 60%;
       display: none;
       background-color: #fff;
       position: absolute;
@@ -126,17 +133,27 @@ const goPracical = () => {
       left: 50%;
       transform: translateX(-50%);
     }
+    .sub-menu>li{
+      width: 100%;
+      font-size: 1.3rem;
+    }
   }
 
   @media (max-width:900px) {
-    .main-menu>li{
+    .main-menu>p{
       font-size: 1.2rem;
     }
-    .sub-menu>li{
+    .sub-menu{
       font-size: 1rem;
     }
   }
 
   @media (max-width:768px) {
+    .main-menu>p{
+      font-size: 1rem;
+    }
+    .sub-menu>li{
+      font-size: 0.7rem;
+    }
   }
 </style>

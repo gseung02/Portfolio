@@ -18,5 +18,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  word-break: keep-all;
 }
+/* @media (max-width:900px){
+  #app{
+    height: auto;
+  }
+} */
 </style>

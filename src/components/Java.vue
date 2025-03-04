@@ -2,7 +2,6 @@
   <div id="javascript">
     <div class="wrap">
       <div></div>
-      <div>
         <div>
           <div class="text-box">
             <div class="box-head">
@@ -14,7 +13,6 @@
             </div>
           </div>
         </div>
-      </div>
       <div></div>
       <div>
         <div class="text-box">
@@ -65,7 +63,7 @@
 <style scoped>
   #javascript{
     width: 100%;
-    height: calc(100% - 113px);
+    height: calc(100% - 108px);
     background-color: var(--color-main);
     }
   .wrap{
@@ -107,9 +105,15 @@
     border-right: none;
   }
   .text-box{
-    width: 300px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .box-head{
+    width: 100%;
     height: 30px;
     display: flex;
     justify-content: end;
@@ -119,6 +123,7 @@
     border: 3px solid #222;
   }
   .box-content{
+    width: 100%;
     height: 120px;
     display: flex;
     flex-direction: column;

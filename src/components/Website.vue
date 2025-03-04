@@ -36,7 +36,7 @@ const showComponent = (component) => {
 
 <style scoped>
 #website{
-  width: 80%;
+  width: 90%;
   height: 90%;
 }
 main{
