@@ -99,4 +99,21 @@
   height: 50px;
   padding-right: 10px;
 }
+/*** 반응형 */
+@media (max-width:1200px) {
+    #tesla{
+      height: auto;
+    }
+    .contents{
+      display: contents;
+    }
+  }
+
+  @media (max-width:900px) {
+    
+  }
+
+  @media (max-width:768px) {
+    
+  }
 </style>

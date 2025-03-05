@@ -80,7 +80,6 @@ const nextSlide = () => {
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 70px;
   overflow: hidden;
 }
 .slider {
@@ -119,8 +118,10 @@ const nextSlide = () => {
 }
 .left,
 .right{
-  width: 270px;
-  height: 550px;
+  width: 45%;
+  min-width: 40%;
+  height: 80%;
+  min-height: 60%;
   border: 5px solid #222;
   border-radius: 10px;
 }
@@ -158,4 +159,17 @@ const nextSlide = () => {
 .circle:nth-child(3){
   background-color: var(--color-hd2);
 }
+@media (max-width:1200px) {
+    .contents{
+      display: contents;
+    }
+  }
+
+  @media (max-width:900px) {
+    
+  }
+
+  @media (max-width:768px) {
+    
+  }
 </style>
